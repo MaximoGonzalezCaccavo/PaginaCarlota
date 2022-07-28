@@ -1,0 +1,306 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em; }
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: black;
+    background-color: rgb(174, 209, 231);
+}
+
+button:hover{
+    background-color: rgb(134, 180, 201);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(30, 30, 30, 0.98);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 1.6em;
+
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: whitesmoke;
+
+}
+
+header a:hover{
+    color:rgb(174, 209, 231);
+}
+
+ 
+#Hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+       0deg,
+       rgba(0,0,0,0.5),
+       rgba(0,0,0,0.5)
+
+    )
+    ,url("media/heropic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+ }
+ #Hero a{
+    color: black;
+    text-decoration: none;
+ }
+ #Hero h1{
+    color: whitesmoke;
+ }
+
+ 
+
+
+
+ #Somos .container{
+    text-align: center;
+    padding: 200px 12px;
+    background-color: whitesmoke;
+
+ }
+
+
+#nuestros-productos{
+    color: black    ;
+    background-color:rgb(174, 209, 231);
+    text-align: center;
+}
+
+ #nuestros-productos .container{
+    
+   padding: 150px 12px ;
+ }
+
+ #nuestros-productos h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+ #nuestros-productos p{
+    display: none;
+ }
+
+ #nuestros-productos .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 30px;
+    border-radius: 15px;
+    
+
+ }
+ 
+ 
+ 
+ .carta:first-child{
+    background-image:
+
+    url("media/produ1.jpg");
+
+
+ }
+
+ .carta:nth-child(2){
+    background-image:
+    url("media/mixagri.jpeg");
+
+ }
+
+ .carta:nth-child(3){
+    background-image:
+    url("media/fotonuez.jpeg");
+    
+ }
+
+footer{
+    background-color: rgb(230, 230,230);
+}
+footer p{
+    margin: 0;
+    color: rgb(100, 100, 100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+@media (min-width: 720px) {
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+
+    }
+    #Hero{
+        height: 950px;
+    }
+    #Hero h1{
+        font-size: 6em;
+    }
+
+    #Somos .container{
+        justify-content: space-evenly;
+        display: flex;
+
+    }
+   
+
+    #Somos .texto{
+        width: 50%;
+        text-align: initial;
+        padding: 0px 30px;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 30px;
+    }
+
+
+    #Somos h2{
+        margin-top: 0px;
+    }
+
+    #Somos .img-container{
+        background-image: linear-gradient(
+            
+            0deg,
+            rgba(0,0,0,0.1),
+            rgba(0,0,0,0.1)
+        ), url("media/cdu.jpg");
+
+        background-size: cover;
+        background-position: center center;
+        width: 700px;
+        height: 700px;
+        
+        
+    }
+
+
+
+    #nuestros-productos .productos{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-productos p{
+        display: block;
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+
+    #nuestros-productos h3{
+        color: black;
+        margin-top: 0;
+    }
+    
+    #nuestros-productos .carta{
+        padding: 15px; 
+        height: 550px;
+        width: 400px;
+        box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+        overflow: hidden;
+        text-align: center;
+        transition: all 0.25s;
+       
+    }
+    .productos .carta:hover{
+        transform: translateY(-15px);
+        box-shadow: 0 12px 16px rgba(0,0,0,0.3);
+    }
+
+    #contacto{
+        text-align: initial;
+    }
+
+    #contacto ul{
+        margin-left: 100px;
+    }
+
+
+
+    footer .container{
+        justify-content: flex-end ;
+    }
+
+    
+    
+    
+
+
+}
