@@ -4,6 +4,7 @@
 
 html{
     scroll-behavior: smooth;
+    
 }
 
 
@@ -12,6 +13,18 @@ html{
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    background-color: rgb(230, 230,230);
+    background-image:url("media/heropic.jpg") ;
+    background-image: linear-gradient(
+       0deg,
+       rgba(0,0,0,0.5),
+       rgba(0,0,0,0.5)
+
+    )
+    ,url("media/heropic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 h1{ font-size: 3.5em;}
@@ -48,6 +61,7 @@ header{
 header .logo{
     margin: 0;
     padding: 25px 30px;
+    
     font-weight: bold;
     color: whitesmoke;
     font-size: 1.6em;
@@ -72,7 +86,6 @@ header a{
     text-decoration: none;
     font-weight: bold;
     color: whitesmoke;
-
 }
 
 header a:hover{
@@ -87,16 +100,7 @@ header a:hover{
     text-align: center;
     flex-direction: column;
     height: 90vh;
-    background-image: linear-gradient(
-       0deg,
-       rgba(0,0,0,0.5),
-       rgba(0,0,0,0.5)
-
-    )
-    ,url("media/heropic.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+  
     
  }
  #Hero a{
@@ -114,20 +118,18 @@ header a:hover{
  #Somos .container{
     text-align: center;
     padding: 200px 12px;
-    background-color: whitesmoke;
-
+    color: white;
  }
 
 
 #nuestros-productos{
-    color: black    ;
-    background-color:rgb(174, 209, 231);
+    color: white    ;
     text-align: center;
 }
 
  #nuestros-productos .container{
     
-   padding: 150px 12px ;
+   padding: 100px px ;
  }
 
  #nuestros-productos h2{
@@ -146,33 +148,106 @@ header a:hover{
     margin: 30px;
     border-radius: 15px;
     
-
  }
  
+
+.carta button{
+    margin-bottom: 2px;
+    margin-top: 370px;
+}
  
  
  .carta:first-child{
-    background-image:
-
+    background-image: 
+    
     url("media/produ1.jpg");
-
+    background-position: center center;
+    background-size: cover;
 
  }
 
  .carta:nth-child(2){
     background-image:
     url("media/mixagri.jpeg");
+    background-position: center center;
+    background-size: cover;
 
  }
 
  .carta:nth-child(3){
     background-image:
     url("media/fotonuez.jpeg");
-    
+    background-position: center center;
+    background-size: cover;
  }
+
+#contacto .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+    
+    
+
+}
+#contacto h2{
+    margin-top: 0;
+    font-size: 3.2em;
+    color: white;
+    text-align: center;
+}
+
+
+.redes-container{
+    display: flex;
+    height: 25vh;
+    align-items: center;
+    justify-content: center;
+    color: white
+}
+.redes-container ul li{
+    display: inline-block;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+ 
+.redes-container ul li a{
+    display:inline-block;
+    padding: 0 10px;
+    background: #333;
+    color: #fff;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0px rgba(0,0,0,0.3);
+    transition: .2s;
+    text-decoration: none;
+}
+
+.redes-container ul:hover a{
+    filter: blur(2px);
+}
+
+.redes-container ul li a:hover{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0,0,0,0.5);
+    filter: none;
+}
+
+.redes-container ul li .icon-instagram:hover{
+    background: #e4405f;
+}
+.redes-container ul li .icon-whatsapp:hover{
+    background: green;
+}
+
 
 footer{
     background-color: rgb(230, 230,230);
+    
 }
 footer p{
     margin: 0;
@@ -180,7 +255,7 @@ footer p{
 }
 
 footer .container{
-    height: 150px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -215,6 +290,8 @@ footer .container{
     #Somos .container{
         justify-content: space-evenly;
         display: flex;
+        
+        
 
     }
    
@@ -252,10 +329,13 @@ footer .container{
     }
 
 
-
+    #nuestros-productos .container{
+        margin-bottom: 0px;
+    }
     #nuestros-productos .productos{
         display: flex;
         justify-content: center;
+        
     }
 
     #nuestros-productos p{
@@ -284,8 +364,19 @@ footer .container{
         box-shadow: 0 12px 16px rgba(0,0,0,0.3);
     }
 
+   
     #contacto{
         text-align: initial;
+       
+    }
+
+    #contacto .container{
+        background-color: rgb(174, 209, 231);
+    }
+    #contacto h2{
+        color: black    ;
+        
+        text-align: center;
     }
 
     #contacto ul{
@@ -295,6 +386,7 @@ footer .container{
 
 
     footer .container{
+        height: 40px;
         justify-content: flex-end ;
     }
 
